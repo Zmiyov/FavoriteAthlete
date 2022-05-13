@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Jdx-qb-Jda" kind="show" identifier="EditAthlete" id="lBM-ky-b8A"/>
+                                    <segue destination="Jdx-qb-Jda" kind="show" identifier="EditAthlete" destinationCreationSelector="editAthlete:sender:" id="lBM-ky-b8A"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,7 +53,7 @@
                     <navigationItem key="navigationItem" title="My Favorite Athletes" id="HkE-HG-Ylf">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sEp-s4-2KD">
                             <connections>
-                                <segue destination="Jdx-qb-Jda" kind="show" identifier="AddAthlete" id="wJO-3P-Bh6"/>
+                                <segue destination="Jdx-qb-Jda" kind="show" identifier="AddAthlete" destinationCreationSelector="addAthlete:" id="wJO-3P-Bh6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,7 +83,7 @@
         <!--Athlete Form View Controller-->
         <scene sceneID="7QF-jC-5Vc">
             <objects>
-                <viewController id="Jdx-qb-Jda" customClass="AthleteFormViewController" customModule="FavoriteAthlete" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addForm" id="Jdx-qb-Jda" customClass="AthleteFormViewController" customModule="FavoriteAthlete" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JTh-XC-suT">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
